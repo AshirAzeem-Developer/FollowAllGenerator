@@ -1,0 +1,36 @@
+function generateLinks() {
+  try {
+    let myObj = JSON.parse(
+      document.getElementById("obj").value ||
+        alert("Please paste the object") ||
+        "{}"
+    );
+    console.log(myObj);
+    const regex = /twitter\.com\/(\w+)/;
+
+    // Extract the username using the regular expression
+    const match = twitterLink.match(regex);
+    const username = match[1];
+
+    const lnksObj = {
+      yt_link: myObj.yt_link + "?sub_confirmation=1",
+      tw_link: "https://twitter.com/intent/user?screen_name="+username,
+      tktk_link: myObj.tktk_link,
+      ins_link: myObj.ins_link,
+      kck_link: myObj.kck_link,
+      tch_link: myObj.tch_link,
+    };
+
+    for (let i of Object.keys(lnksObj)) {
+      let el = document.getElementById(i);
+      el.style.display = "none";
+      if (myObj[i]) {
+        el["href"] = lnksObj[i];
+        el.style.display = "block";
+        console.log(i);
+      }
+    }
+  } catch (error) {
+    alert(error);
+  }
+}

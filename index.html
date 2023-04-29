@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow All Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria&family=Barlow+Condensed&family=Nunito+Sans:wght@200;400;600;800&family=Oswald:wght@300;400&family=Outfit&family=Roboto:wght@100;300;400&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="pageContainer" id="mainPage">
+            <div class="subContainer py-5 ">
+                <div class="text-center mx-auto">
+                    <h3 class="display-3  fw-bold myFOntFamily">
+                        Follow All Generator
+                    </h3>
+
+                </div>
+                <div class="container align-items-center p-5">
+                    <div class="row justify-content-center d-flex flex-column align-content-center">
+                        <div class="col-md-4   ">
+                            <div>
+                                <input type="text" id="yt_lnk" class="p-3  w-100 my-2 inputFields"
+                                    placeholder="Enter your youtube Link">
+                            </div>
+                            <div>
+                                <input type="text" id="tw_lnk" class="p-3  w-100 my-2 inputFields"
+                                    placeholder="Enter your twitter Link">
+                            </div>
+                            <div>
+                                <input type="text" id="tktk_lnk" class="p-3  w-100 my-2 inputFields"
+                                    placeholder="Enter your tiktok Link">
+                            </div>
+                            <div>
+                                <input type="text" id="ins_lnk" class="p-3  w-100 my-2 inputFields"
+                                    placeholder="Enter your instagram Link">
+                            </div>
+                            <div>
+                                <input type="text" id="tch_lnk" class="p-3  w-100 my-2 inputFields"
+                                    placeholder="Enter your twitch Link">
+                            </div>
+                            <div>
+                                <input type="text" id="kck_lnk" class="p-3  w-100 my-2 inputFields"
+                                    placeholder="Enter your kick Link">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="p-3 fs-5 bg-info  w-100 mx-auto my-2 rounded-5" id="generated_linkBtn"
+                                onclick="genObj()">
+                                Generate Link
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="Searcher.html" target="_blank"> <button
+                                    class="p-3 fs-5 bg-info  w-100 mx-auto my-2 rounded-5" id="generated_linkBtn">
+                                    Search Accounts
+                                </button></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-2 ">
+                        <div class="col-md-3 text-start w-auto ">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap ">
+                                <div class="mx-auto p-3 w-100">
+
+                                    <p class="fs-5 p-3" id="generated_link"><a href="#"></a></p>
+                                </div>
+                                <!-- <div class="mx-auto p-3">
+                                    <button class="p-3 fs-5  w-100 mx-auto" id="copyButton">
+                                        Copy
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

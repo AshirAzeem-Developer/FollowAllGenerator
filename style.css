@@ -1,0 +1,99 @@
+.myFOntFamily {
+    font-family: 'Outfit', sans-serif;
+}
+
+* {
+    font-family: 'Jost', sans-serif;
+
+}
+
+.otherTextFontFamily {
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+#copyButton {
+    background-color: transparent;
+    border: none;
+
+}
+
+.pageContainer {
+    height: 100vh;
+    /* background-image: linear-gradient(to right, #c0392b, #8e44ad); */
+    background-image: url('images/bg.jpg');
+    background-position: right;
+    background-size: cover;
+}
+
+.subContainer {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.inputFields {
+    background-color: transparent;
+    border: none;
+    border-bottom: #00BBEF 2px solid;
+}
+
+.inputFields:focus {
+    /* border: none; */
+    outline: none;
+    border: none;
+    background-color: #00BBEF;
+    border-radius: 5px;
+}
+
+.inputFields:focus::placeholder {
+    /* border: none; */
+    color: black;
+}
+
+#generated_linkBtn {
+
+    border: none;
+}
+
+#generated_link {
+    color: red;
+    word-wrap: break-word;
+}
+
+/* ====================Searcher CSS========================= */
+
+#Searcher {
+    height: 100vh;
+    /* background-image: linear-gradient(to right, #c0392b, #8e44ad); */
+}
+
+
+
+#link_list a {
+    display: none;
+}
+
+#SearcherBtn {
+
+    border: none;
+}
+
+.SearcherLinks a {
+
+    color: red;
+}
+
+#dullBg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
